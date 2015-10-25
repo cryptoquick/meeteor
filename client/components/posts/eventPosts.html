@@ -1,0 +1,27 @@
+<template name="eventPosts">
+    {{logger}}
+  <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="http://lorempixel.com/600/400/sports/1/"> {{postImage}}
+          <span class="card-title">{{postTitle}}</span>
+        </div>
+        <div class="card-content">
+          <p>
+            {{postBody}} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam reprehenderit pariatur unde, nobis voluptatum, nesciunt dicta molestiae adipisci quasi tempora itaque a dignissimos voluptate. Explicabo consequuntur amet sequi dolorem minima!
+          </p>
+        </div>
+
+        {{#each postUrl}}
+        <div class="card-action">
+          <div class="card-content">
+            <p>
+              <a href="{{url}}">{{urlName}}</a>
+            </p>
+          </div>
+        </div>
+        {{/each}}
+
+      </div>
+    </div>
+</template>

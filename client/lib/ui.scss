@@ -1,0 +1,21 @@
+// Materialize Sass variables override
+@import "{poetic:materialize-scss}/bower_components/materialize/sass/components/_color.scss";
+
+$primary-color: color('grey', 'darken-1');
+$secondary-color: color('grey', 'darken-2');
+
+// Import main Materialize scss file
+@import "{poetic:materialize-scss}/bower_components/materialize/sass/materialize.scss";
+
+.chip {
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: #E4E4E4;
+  margin-bottom: 3px;
+}

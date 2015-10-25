@@ -1,0 +1,19 @@
+<template name="event">
+  <!-- event detail -->
+  <div class="card" data-action="event-go">
+    <div class="card-image">
+      {{#if image}}
+        <img src="{{image}}" class="responsive-img">
+        <span class="card-title">{{title}}</span>
+      {{else}}
+        <span class="black card-title">{{title}}</span>
+      {{/if}}
+    </div>
+    <div class="card-content">
+      <p>{{content}}</p>
+    </div>
+    <div class="card-action">
+      <a href="{{url}}">{{url}}</a>
+    </div>
+  </div>
+</template>

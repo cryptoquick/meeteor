@@ -1,0 +1,14 @@
+<template name="imageUpload">
+  <div class="row image-upload">
+    {{#with image}}
+      <div class="image-upload-resumable card" style="{{#if uploadFinished}}background-image: url('/images/hash/{{md5}}');{{/if}}">
+        <div class="progress">
+          <div class="determinate" style="width: {{progress}}%"></div>
+        </div>
+        {{#unless md5}}
+          Drop your image here, or click to browse
+        {{/unless}}
+      </div>
+    {{/with}}
+  </div>
+</template>

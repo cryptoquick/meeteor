@@ -1,0 +1,22 @@
+<template name="layout">
+  {{#if currentUser}}
+    {{>loggedIn}}
+  {{else}}
+    {{>login}}
+  {{/if}}
+</template>
+
+<template name="login">
+  <div class="container">
+    {{>atForm}}
+  </div>
+</template>
+
+<template name="loggedIn">
+    {{#if currentUser}}
+      {{>nav}}
+        {{>yield}}
+       {{else}}
+      {{>login}}
+     {{/if}}
+</template>
