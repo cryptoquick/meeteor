@@ -18,11 +18,6 @@ Template.eventPosts.helpers({
   }
 })
 
-Template.eventPosts.events({
-//  'click [data-action="open-modal"]': function (event, template) {
-//    event.preventDefault()
-//    var modal = event.currentTarget.dataset.target
-//    $('#' + modal).modal('show');
-//  }
-})
-
+Template.eventPosts.onRendered(function() {
+  this.$('.materialboxed').materialbox();
+});
