@@ -9,5 +9,6 @@ Meteor.publish("posts", function (slug) {
   if (!this.userId) {
     return [];
   }
-  return Posts.find({slug:slug}, {sort: {createdAt: -1}});
+  return Posts.find({event:slug}, {sort: {createdAt: -1}});
+//   return Posts.find({});
 });

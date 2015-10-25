@@ -15,7 +15,8 @@ Router.route('/profile', function () {
 });
 
 Router.route('/event/:slug', function () {
-  this.render('eventPosts');
+  this.render('postsPage');
+  Session.set("slug", this.params.slug); // TODO make better someday...
 }, {
   name: 'event'
 });
@@ -24,7 +25,7 @@ Router.route('/events', function () {
   this.render('eventsPage');
 });
 
-Router.route('/add-event', function () {
+Router.route('/event/:slug/add', function () {
   this.render('addEvent');
 });
 
