@@ -6,9 +6,9 @@ Router.configure({
   }
 });
 
-Router.route('/', function () {
-  this.render('home');
-});
+// Router.route('/', function () {
+//   this.render('home');
+// });
 
 Router.route('/profile', function () {
   this.render('profile');
@@ -21,11 +21,11 @@ Router.route('/event/:slug', function () {
   name: 'event'
 });
 
-Router.route('/events', function () {
+Router.route('/', function () {
   this.render('eventsPage');
 });
 
-Router.route('/event/:slug/add', function () {
+Router.route('/add-event', function () {
   this.render('addEvent');
 });
 
