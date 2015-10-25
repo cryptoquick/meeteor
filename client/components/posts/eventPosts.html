@@ -1,6 +1,6 @@
 <template name="eventPosts">
   <div class="card z-depth-2 event-posts" data-action="event-go">
-    <div class="card-image materialboxed">
+    <div class="card-image materialboxed" data-caption="{{title}}" >
       {{#if image}}
         <img src="{{image}}" class="responsive-img">
         <span class="card-title">{{title}}</span>

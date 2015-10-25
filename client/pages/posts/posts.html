@@ -1,0 +1,16 @@
+<template name="postsPage">
+  {{#if Template.subscriptionsReady}}
+  <div class="container">
+    {{#with eventDetails}}
+      <h1>{{title}}</h1>
+      <p class="flow-text">{{content}}</p>
+    {{/with}}
+
+    {{> radioactive items=posts template="eventPosts" parentClass="row" childClass="col s12 m6 l3"}}
+    {{>postAction}}
+  </div>
+
+  {{else}}
+    {{>loading}}
+  {{/if}}
+</template>

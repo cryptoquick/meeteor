@@ -21,7 +21,7 @@ AutoForm.hooks({
 
     onSuccess: function () {
       Materialize.toast('Event added!', 4000);
-      Router.go('/events');
+      Router.go('/');
     }
   }
 });

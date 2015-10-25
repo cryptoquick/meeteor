@@ -1,0 +1,12 @@
+<template name="addPost">
+<div class="container">
+  {{#autoForm collection="Posts" id="addPostForm" type="insert"}}
+    <h3>Add a Post</h3>
+    {{> afQuickField name="url" placeholder="http://"}}
+    {{> afQuickField name="title"}}
+    {{> afQuickField name="content" rows=6 class="materialize-textarea"}}
+    {{> imageUpload}}
+    <button type="submit" class="btn">Add</button>
+  {{/autoForm}}
+</div>
+</template>
